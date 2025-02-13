@@ -4,6 +4,7 @@
 :root{
 --fundo-branco: #fff;
 --botoes-UI: #04bf7b;
+--botoes-UI-Hover: rgba(4, 191, 123, 0.5);
 --fundo-UI: #f2c84b;
 --fundo-Azul: #0489bf;
 }
@@ -38,6 +39,12 @@
     min-width: 120px;
     letter-spacing: 1px;
 }
+
+#divMenuCima:hover{
+    background-color: var(--botoes-UI-Hover);
+    transition: background-color 0.3s;
+}
+
 
 body {
 font-family: 'Fredoka', sans-serif;
