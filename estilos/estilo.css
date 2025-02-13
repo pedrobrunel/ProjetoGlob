@@ -24,6 +24,7 @@
     }
 
 #divMenuCima{
+    transition:  0.3s;
     display: inline-flex;
     gap: 10px;
     background-color: var(--botoes-UI);
@@ -42,7 +43,8 @@
 
 #divMenuCima:hover{
     background-color: var(--botoes-UI-Hover);
-    transition: background-color 0.3s;
+    transform: scale(1.2);
+    transition:  0.3s;
 }
 
 
