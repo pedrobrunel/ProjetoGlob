@@ -1,0 +1,74 @@
+:root{
+--fundo-branco: #fff;
+--botoes-UI: #f2c84b;
+--fundo-UI: #04bf7b;
+}
+
+#menuCima{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--fundo-UI);
+    padding: 15px;
+    text-align: center;
+    z-index: 10;
+    border-radius: 0px 0px 50px 50px;
+}
+
+#divMenuCima{
+    display: inline-flex;
+    gap: 10px;
+    background-color: var(--botoes-UI);
+    width: 100px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+body {
+    background-color: #0489bf;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Faz com que o body ocupe a tela toda */
+    margin: 0; /* Remove margens padrão */
+}
+
+.divDoMeio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    width: 900px; /* Defina uma largura para manter a estrutura */
+    height: 400px; /* Defina uma altura */
+}
+    
+    .div1 { grid-area: 1 / 1 / 3 / 2;
+        background-color: var(--fundo-branco);
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .div2 { grid-area: 1 / 2 / 2 / 3;
+        background-color: var(--fundo-branco);
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .div3 { grid-area: 1 / 3 / 2 / 4;
+        background-color: var(--fundo-branco);
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .div4 { grid-area: 2 / 2 / 3 / 3;
+        background-color: var(--fundo-branco);
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .div5 { grid-area: 2 / 3 / 3 / 4;
+        background-color: var(--fundo-branco);
+        border-radius: 12px;
+        overflow: hidden;
+    }

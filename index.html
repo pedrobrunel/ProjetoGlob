@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="estilo.css"> 
+    <link rel="stylesheet" href="estilos/estilo.css"> 
+
+    <script>
+        function incluirMenu(arquivo, elemento){
+            fetch(arquivo)
+                .then(response => response.text())
+                .then(data => document.querySelector(elemento).innerHTML = data)
+        }
+    </script>
 </head>
-<body>
+<body onload="incluirMenu('menus/menuCima.html', '#menuCima')">
+
+    <div id="menuCima"></div>
+
     <div class="divDoMeio">
         <div class="div1"> 1</div>
         <div class="div2"> 2</div>
