@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+
+
 :root{
 --fundo-branco: #fff;
---botoes-UI: #f2c84b;
---fundo-UI: #04bf7b;
+--botoes-UI: #04bf7b;
+--fundo-UI: #f2c84b;
+--fundo-Azul: #0489bf;
 }
 
 #menuCima{
@@ -14,21 +18,34 @@
     text-align: center;
     z-index: 10;
     border-radius: 0px 0px 50px 50px;
-}
+    box-sizing: border-box;
+    color: var(--fundo-branco);
+    }
 
 #divMenuCima{
     display: inline-flex;
     gap: 10px;
     background-color: var(--botoes-UI);
     width: 100px;
-    height: 60px;
+    height: 40px;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+    cursor: pointer;
+    min-width: 120px;
+    letter-spacing: 1px;
 }
 
 body {
-    background-color: #0489bf;
+font-family: 'Fredoka', sans-serif;
+
+margin: 0;
+padding: 0;
+
+    background-color: var(--fundo-Azul);
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
@@ -36,39 +53,83 @@ body {
     margin: 0; /* Remove margens padrão */
 }
 
+h1, h2 {
+    font-family: 'Bangers', cursive;
+}
+
+p, a {
+    font-family: 'Fredoka', sans-serif;
+}
+
+
 .divDoMeio {
+
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+
     grid-column-gap: 15px;
     grid-row-gap: 15px;
-    width: 900px; /* Defina uma largura para manter a estrutura */
-    height: 400px; /* Defina uma altura */
-}
-    
-    .div1 { grid-area: 1 / 1 / 3 / 2;
-        background-color: var(--fundo-branco);
-        border-radius: 12px;
-        overflow: hidden;
-    }
 
-    .div2 { grid-area: 1 / 2 / 2 / 3;
-        background-color: var(--fundo-branco);
-        border-radius: 12px;
-        overflow: hidden;
-    }
-    .div3 { grid-area: 1 / 3 / 2 / 4;
-        background-color: var(--fundo-branco);
-        border-radius: 12px;
-        overflow: hidden;
-    }
-    .div4 { grid-area: 2 / 2 / 3 / 3;
-        background-color: var(--fundo-branco);
-        border-radius: 12px;
-        overflow: hidden;
-    }
-    .div5 { grid-area: 2 / 3 / 3 / 4;
-        background-color: var(--fundo-branco);
-        border-radius: 12px;
-        overflow: hidden;
-    }
+    width: 85vw; 
+    height: 80vh; 
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+.div1 { 
+    grid-area: 2 / 1 / 4 / 3; /* Agora ocupa da linha 1 até a linha 3, e da coluna 1 até a coluna 3 */
+    background-color: var(--fundo-branco);
+    border-radius: 12px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center; /* Centraliza na vertical */
+    justify-content: center; /* Centraliza na horizontal */
+}
+
+.div2 { 
+    grid-area: 2 / 3 / 3 / 4; /* Agora ocupa da linha 1 até a linha 3, e da coluna 1 até a coluna 3 */
+    background-color: var(--fundo-branco);
+    border-radius: 12px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center; /* Centraliza na vertical */
+    justify-content: center; /* Centraliza na horizontal */
+}
+
+.div3 { 
+    grid-area: 3 / 3 / 4 / 4; /* Mantém a posição original */
+    background-color: var(--fundo-branco);
+    border-radius: 12px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center; /* Centraliza na vertical */
+    justify-content: center; /* Centraliza na horizontal */
+}
+
+.div4 { 
+    grid-area: 2 / 4 / 3 / 5; /* Mantém a posição original */
+    background-color: var(--fundo-branco);
+    border-radius: 12px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center; /* Centraliza na vertical */
+    justify-content: center; /* Centraliza na horizontal */
+}
+
+.div5 { 
+    grid-area: 3 / 4 / 4 / 5; /* Mantém a posição original */
+    background-color: var(--fundo-branco);
+    border-radius: 12px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center; /* Centraliza na vertical */
+    justify-content: center; /* Centraliza na horizontal */
+}
+
