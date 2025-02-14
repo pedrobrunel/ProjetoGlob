@@ -10,9 +10,28 @@
         function incluirMenu(arquivo, elemento){
             fetch(arquivo)
                 .then(response => response.text())
-                .then(data => document.querySelector(elemento).innerHTML = data)
+                .then(data => {
+                    document.querySelector(elemento).innerHTML = data;
+                    
+                    // Agora os elementos existem no DOM, então podemos adicionar eventos:
+                    const divsMenuCima = document.querySelectorAll(".divMenuCima");               
+                    // Criar o áudio uma única vez (evita múltiplas instâncias)
+                    const audio = new Audio("sons/MenuHover.mp3");
+                    
+                    divsMenuCima.forEach(div => {
+                        div.addEventListener("mouseenter", function () {
+                            audio.currentTime = 0; // Reinicia o som
+                            audio.play().catch(error => console.log("Erro ao tocar áudio:", error)); // Toca o som
+                        });
+                    });
+                });
         }
     </script>
+    
+    
+
+
+    
 </head>
 <body onload="incluirMenu('menus/menuCima.html', '#menuCima')">
 

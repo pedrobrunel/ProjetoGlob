@@ -1,8 +1,29 @@
 <nav>
-    <div id="divMenuCima"> <strong>Mundo</strong></div>
-    <div id="divMenuCima"> <strong>Jogos</strong></div>
-    <div id="divMenuCima"> <strong>Publicações</strong></div>
-    <div id="divMenuCima"> <strong>Biblioteca</strong></div>
-    <div id="divMenuCima"> <strong>Jornal</strong></div>
-    <div id="divMenuCima"> <strong>TV Glob</strong></div>
+    <div class="divMenuCima"> <strong>Mundo</strong></div>
+    <div class="divMenuCima"> <strong>Jogos</strong></div>
+    <div class="divMenuCima"> <strong>Publicações</strong></div>
+    <div class="divMenuCima"> <strong>Biblioteca</strong></div>
+    <div class="divMenuCima"> <strong>Jornal</strong></div>
+    <div class="divMenuCima"> <strong>TV Glob</strong></div>
 </nav>
+
+
+<script>
+    console.log("entrou 1:");
+
+document.addEventListener("DOMContentLoaded", function () {
+const divsMenuCima = document.querySelectorAll(".divMenuCima");
+console.log("entrou 2");
+
+divsMenuCima.forEach(div => {
+    console.log("Elemento encontrado:"); // Testa se os elementos existem
+    div.addEventListener("click", function () {
+        alert("oi");
+    });
+});
+});
+
+</script>
+
+
+
