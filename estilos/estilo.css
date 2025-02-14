@@ -97,6 +97,8 @@ p, a {
     align-items: center; /* Centraliza na vertical */
     justify-content: center; /* Centraliza na horizontal */
     border: 5px solid white;
+    position: relative; /* Garante que os filhos absolutos fiquem dentro dela */
+
 }
 
 .div2 { 
@@ -108,7 +110,7 @@ p, a {
     display: flex;
     align-items: center; /* Centraliza na vertical */
     justify-content: center; /* Centraliza na horizontal */
-    border: 5px solid white;
+    position: relative; /* Garante que os filhos absolutos fiquem dentro dela */
 
 }
 
@@ -121,7 +123,8 @@ p, a {
     display: flex;
     align-items: center; /* Centraliza na vertical */
     justify-content: center; /* Centraliza na horizontal */
-    border: 5px solid white;
+    position: relative; /* Garante que os filhos absolutos fiquem dentro dela */
+
 
 }
 
@@ -134,7 +137,7 @@ p, a {
     display: flex;
     align-items: center; /* Centraliza na vertical */
     justify-content: center; /* Centraliza na horizontal */
-    border: 5px solid white;
+    position: relative; /* Garante que os filhos absolutos fiquem dentro dela */
 
 }
 
@@ -147,7 +150,20 @@ p, a {
     display: flex;
     align-items: center; /* Centraliza na vertical */
     justify-content: center; /* Centraliza na horizontal */
-    border: 5px solid white;
+    position: relative; /* Garante que os filhos absolutos fiquem dentro dela */
 
 }
 
+.barrinhaDivsMenu{
+    align-items: center; /* Centraliza na vertical */
+    justify-content: center; /* Centraliza na horizontal */
+    height: 100%;
+    width: 100%;
+    background-color: var(--fundo-UI);
+    position:absolute ;
+    z-index: 2;
+    top: 85%;
+    
+    border-radius: 50px;
+    box-sizing: border-box;
+}
