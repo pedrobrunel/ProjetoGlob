@@ -17,7 +17,7 @@
                     const divsMenuCima = document.querySelectorAll(".divMenuCima");               
                     // Criar o áudio uma única vez (evita múltiplas instâncias)
                     const audio = new Audio("sons/MenuHover.mp3");
-                    
+
                     divsMenuCima.forEach(div => {
                         div.addEventListener("mouseenter", function () {
                             audio.currentTime = 0; // Reinicia o som
@@ -27,6 +27,9 @@
                 });
         }
     </script>
+
+<script src="https://unpkg.com/@rive-app/canvas@2.10.1"></script>
+
     
     
 
@@ -38,12 +41,24 @@
     <div id="menuCima"></div>
 
     <div class="divDoMeio">
-        <div class="div1"> <img src="imagens/tv-Glob-2.png" width="100%" ></div>
-        <div class="div2">
-            <img class="imgVideoTVHome" src="imagens/tv-Glob-2.png" width="100%" >
-            
+        <div class="div1">
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const r = new rive.Rive({
+                        src: "imagens/mundo.riv", // Caminho do arquivo .riv
+                        canvas: document.getElementById("riveCanvas"),
+                        autoplay: true,  // A animação começa automaticamente
+                        loop: true
+                    });
+                });
+            </script>
+
+<canvas id="riveCanvas" width="600" height="600"></canvas>
 
             
+        </div>
+        <div class="div2">
+            <img class="imgVideoTVHome" src="imagens/tv-Glob-2.png" width="100%" >         
         </div>
         <div class="div3"> <img src="imagens/tv-Glob-2.png" width="100%" ></div>
         <div class="div4"> <img src="imagens/tv-Glob-2.png" width="100%" ></div>

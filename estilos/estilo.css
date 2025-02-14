@@ -89,13 +89,14 @@ p, a {
 
 .div1 { 
     grid-area: 2 / 1 / 4 / 3; /* Agora ocupa da linha 1 até a linha 3, e da coluna 1 até a coluna 3 */
-    background-color: var(--fundo-branco);
+    background-color: #b8f1f4;
     border-radius: 12px;
     overflow: hidden;
 
     display: flex;
     align-items: center; /* Centraliza na vertical */
     justify-content: center; /* Centraliza na horizontal */
+    border: 5px solid white;
 }
 
 .div2 { 
@@ -107,6 +108,8 @@ p, a {
     display: flex;
     align-items: center; /* Centraliza na vertical */
     justify-content: center; /* Centraliza na horizontal */
+    border: 5px solid white;
+
 }
 
 .div3 { 
@@ -118,6 +121,8 @@ p, a {
     display: flex;
     align-items: center; /* Centraliza na vertical */
     justify-content: center; /* Centraliza na horizontal */
+    border: 5px solid white;
+
 }
 
 .div4 { 
@@ -129,6 +134,8 @@ p, a {
     display: flex;
     align-items: center; /* Centraliza na vertical */
     justify-content: center; /* Centraliza na horizontal */
+    border: 5px solid white;
+
 }
 
 .div5 { 
@@ -140,5 +147,7 @@ p, a {
     display: flex;
     align-items: center; /* Centraliza na vertical */
     justify-content: center; /* Centraliza na horizontal */
+    border: 5px solid white;
+
 }
 
