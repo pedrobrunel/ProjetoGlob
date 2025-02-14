@@ -174,3 +174,22 @@ p, a {
     transition:  0.3s;
     top: 70%;
 }
+
+.barrinhaDivsMenu h2{
+    align-items: center; /* Centraliza na vertical */
+    justify-content: center; /* Centraliza na horizontal */
+    letter-spacing: 1.5px;
+    color: var(--fundo-Azul);
+    transition:  0.3s;
+    position:absolute ;
+    top: -2%;
+    left: 25%;
+}
+
+.barrinhaDivsMenu:hover h2{
+    color: var(--botoes-UI);
+    transition:  0.3s;
+    transform: scale(1.5);
+    top: 5%;
+    left: 25%;
+}
