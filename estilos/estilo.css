@@ -166,4 +166,11 @@ p, a {
     
     border-radius: 50px;
     box-sizing: border-box;
+    transition:  0.3s;
+
+}
+
+.barrinhaDivsMenu:hover{
+    transition:  0.3s;
+    top: 70%;
 }

@@ -15,8 +15,10 @@
                     
                     // Agora os elementos existem no DOM, então podemos adicionar eventos:
                     const divsMenuCima = document.querySelectorAll(".divMenuCima");               
+                    const divsMenuPapel = document.querySelectorAll(".barrinhaDivsMenu");       
                     // Criar o áudio uma única vez (evita múltiplas instâncias)
                     const audio = new Audio("sons/MenuHover.mp3");
+                    const audioPapel = new Audio("sons/barulhoPapel.mp3")
 
                     divsMenuCima.forEach(div => {
                         div.addEventListener("mouseenter", function () {
@@ -24,8 +26,17 @@
                             audio.play().catch(error => console.log("Erro ao tocar áudio:", error)); // Toca o som
                         });
                     });
+                
+
+                divsMenuPapel.forEach(div => {
+                        div.addEventListener("mouseenter", function () {
+                            audioPapel.currentTime = 0; // Reinicia o som
+                            audioPapel.play().catch(error => console.log("Erro ao tocar áudio:", error)); // Toca o som
+                        });
+                    });
                 });
-        }
+        
+            }
     </script>
 
 <script src="https://unpkg.com/@rive-app/canvas@2.10.1"></script>
