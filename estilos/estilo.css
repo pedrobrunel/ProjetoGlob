@@ -25,6 +25,7 @@
     }
 
 .divMenuCima{
+    cursor: url('/imagens/mouse/setaClique.png'), pointer;
     transition:  0.3s;
     display: inline-flex;
     gap: 10px;
@@ -43,6 +44,7 @@
 }
 
 .divMenuCima:hover{
+    cursor: url('/imagens/mouse/setaClique.png'), pointer;
     background-color: var(--botoes-UI-Hover);
     transform: scale(1.2);
     transition:  0.3s;
@@ -70,6 +72,10 @@ h1, h2 {
 
 p, a {
     font-family: 'Fredoka', sans-serif;
+}
+
+a {
+    cursor: url('/imagens/mouse/setaClique.png'), pointer;
 }
 
 
@@ -157,15 +163,20 @@ p, a {
 }
 
 .barrinhaDivsMenu{
-    align-items: center; /* Centraliza na vertical */
-    justify-content: center; /* Centraliza na horizontal */
+    cursor: url('/imagens/mouse/setaClique.png'), pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
     height: 100%;
     width: 100%;
+    bottom: 0;
     background-color: var(--fundo-UI);
     position:absolute ;
     z-index: 2;
     top: 85%;
-    
     border-radius: 50px;
     box-sizing: border-box;
     transition:  0.3s;
@@ -173,6 +184,8 @@ p, a {
 }
 
 .barrinhaDivsMenu:hover{
+
+    cursor: url('/imagens/mouse/setaClique.png'), pointer;
     transition:  0.3s;
     top: 70%;
 }
@@ -184,8 +197,9 @@ p, a {
     color: var(--fundo-Azul);
     transition:  0.3s;
     position:absolute ;
-    top: -2%;
-    left: 25%;
+    top: -0.7vh;
+    transform: scale(1.2);
+
 }
 
 .barrinhaDivsMenu:hover h2{
@@ -193,5 +207,4 @@ p, a {
     transition:  0.3s;
     transform: scale(1.5);
     top: 5%;
-    left: 25%;
 }
