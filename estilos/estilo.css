@@ -53,7 +53,7 @@
 
 body {
 font-family: 'Fredoka', sans-serif;
-cursor: url('ProjetoGlob/imagens/mouse/setaPadrao.cur'), auto;
+cursor: url('/imagens/mouse/setaPadrao.cur'), auto;
 
 margin: 0;
 padding: 0;

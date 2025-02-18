@@ -43,17 +43,28 @@ form, #username, #email  {
     gap: 10px; /* Espaço entre os elementos */
 }
 
-form label{
+h1, h2 {
+    font-family: 'Bangers', cursive;
 }
 
-#username, #email {
+p, a {
+    font-family: 'Fredoka', sans-serif;
+}
+
+a {
+    cursor: url('/imagens/mouse/setaClique.cur'), pointer;
+}
+
+#username, #senha {
     width: 200px;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 15px;
 }
 
-#botaoLogin{
+
+
+#botao{
     all: unset; /* Reseta todos os estilos padrões */
     display: flex;
     cursor: url('/imagens/mouse/setaClique.cur'), pointer;
@@ -71,13 +82,15 @@ form label{
     cursor: pointer;
     min-width: 120px;
     letter-spacing: 1px;
-}
+    
+    }
 
-#botaoLogin:hover{
+#botao:hover{
     cursor: url('/imagens/mouse/setaClique.cur'), pointer;
     background-color: var(--botoes-UI-Hover);
     transform: scale(1.1);
     transition:  0.3s;
+    color: var(--fundo-branco);
 }
 
 
@@ -88,5 +101,5 @@ label{
 
 body{
     font-family: 'Fredoka', sans-serif;
-cursor: url('/imagens/mouse/setaPadrao.cur'), auto;
+    cursor: url('/imagens/mouse/setaPadrao.cur'), auto;
 }
