@@ -1,0 +1,92 @@
+:root {
+    --fundo-branco: #fff;
+    --botoes-UI: #04bf7b;
+    --botoes-UI-Hover: rgba(4, 191, 123, 0.5);
+    --fundo-UI: #f2c84b;
+    --fundo-Azul: #0489bf;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+}
+
+.divideTela {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda {
+    background-color: var(--fundo-UI);
+}
+
+.direita {
+    background-color: var(--fundo-Azul);
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espaço entre os elementos */
+}
+
+form, #username, #email  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espaço entre os elementos */
+}
+
+form label{
+}
+
+#username, #email {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+#botaoLogin{
+    all: unset; /* Reseta todos os estilos padrões */
+    display: flex;
+    cursor: url('/imagens/mouse/setaClique.cur'), pointer;
+    transition:  0.3s;
+    gap: 10px;
+    background-color: var(--fundo-UI);
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 0;
+    margin-top: 5%;
+    cursor: pointer;
+    min-width: 120px;
+    letter-spacing: 1px;
+}
+
+#botaoLogin:hover{
+    cursor: url('/imagens/mouse/setaClique.cur'), pointer;
+    background-color: var(--botoes-UI-Hover);
+    transform: scale(1.1);
+    transition:  0.3s;
+}
+
+
+label{
+    color: var(--fundo-branco);
+    font-size:28px;
+}
+
+body{
+    font-family: 'Fredoka', sans-serif;
+cursor: url('/imagens/mouse/setaPadrao.cur'), auto;
+}
