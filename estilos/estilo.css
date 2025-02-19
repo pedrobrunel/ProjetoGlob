@@ -84,6 +84,7 @@ a {
 
 .divDoMeio {
 
+    margin-top: 0.5%;
     display: grid;
 
     grid-column-gap: 15px;
