@@ -23,13 +23,25 @@ body {
 
 .esquerda {
     background-color: var(--fundo-UI);
+    z-index: 0;
 }
 
 .direita {
     background-color: var(--fundo-Azul);
+    z-index: 1;
 }
 
-.centered {
+.centeredLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espaço entre os elementos */
+    background-color: var(--fundo-UI);
+    padding: 5%;
+    border-radius: 25px;
+}
+
+.centeredSlide {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,7 +82,7 @@ a {
     cursor: url('/imagens/mouse/setaClique.cur'), pointer;
     transition:  0.3s;
     gap: 10px;
-    background-color: var(--fundo-UI);
+    background-color: var(--botoes-UI);
     width: 100px;
     height: 40px;
     justify-content: center;
@@ -82,6 +94,7 @@ a {
     cursor: pointer;
     min-width: 120px;
     letter-spacing: 1px;
+    color: var(--fundo-branco);
     
     }
 
@@ -95,8 +108,9 @@ a {
 
 
 label{
-    color: var(--fundo-branco);
+    color: var(--fundo-Azul);
     font-size:28px;
+    font-weight: bold;
 }
 
 body{

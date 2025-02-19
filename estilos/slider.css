@@ -1,3 +1,11 @@
+:root {
+    --fundo-branco: #fff;
+    --botoes-UI: #04bf7b;
+    --botoes-UI-Hover: rgba(4, 191, 123, 0.5);
+    --fundo-UI: #f2c84b;
+    --fundo-Azul: #0489bf;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -52,15 +60,15 @@ li {
     margin-left: 25px;
     margin-right: 25px;
     transition: 0.2s;
-
+    color: var(--fundo-Azul);
 }
 
 .previous-button:hover, .next-button:hover{
-    background-color: var(--fundo-UI);
+    background-color: var(--botoes-UI);
     border: none;
     border-radius: 50px;
-    opacity: 0.5;
     transition: 0.2s;
+    color: var(--fundo-branco);
 }
 
  .previous-button{
@@ -79,9 +87,11 @@ li {
 
  @keyframes entrando {
     from{
-        opacity: 0.2;
+        opacity: 0.5;
+        transform: scale(1.2);
     }
     to{
         opacity: 1;
+        transform: scale(1);
     }
  }

@@ -13,15 +13,18 @@
 #menuCima{
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* Ajusta para centralizar */
+    width: 90%;
     background-color: var(--fundo-UI);
     padding: 15px;
     text-align: center;
+    justify-content: center;
     z-index: 10;
-    border-radius: 0px 0px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
     box-sizing: border-box;
     color: var(--fundo-branco);
+    margin-top: 1%;
     }
 
 .divMenuCima{
@@ -106,7 +109,6 @@ a {
     justify-content: center; /* Centraliza na horizontal */
     border: 5px solid white;
     position: relative; /* Garante que os filhos absolutos fiquem dentro dela */
-
 }
 
 .div2 { 
