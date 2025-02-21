@@ -123,6 +123,19 @@ a {
     justify-content: center; /* Centraliza na horizontal */
     position: relative; /* Garante que os filhos absolutos fiquem dentro dela */
 
+    border: 5px solid var(--fundo-branco);
+
+
+}
+
+.imgDivHome{
+    transform: scale(1);
+    transition: 2s;
+}
+
+.imgDivHome:Hover{
+    transform: scale(1.2);
+    transition: 2s;
 }
 
 .div3 { 
@@ -136,7 +149,8 @@ a {
     justify-content: center; /* Centraliza na horizontal */
     position: relative; /* Garante que os filhos absolutos fiquem dentro dela */
 
-
+    border: 5px solid var(--fundo-branco);
+    
 }
 
 .div4 { 
@@ -149,6 +163,9 @@ a {
     align-items: center; /* Centraliza na vertical */
     justify-content: center; /* Centraliza na horizontal */
     position: relative; /* Garante que os filhos absolutos fiquem dentro dela */
+
+    border: 5px solid var(--fundo-branco);
+
 
 }
 
@@ -163,6 +180,8 @@ a {
     justify-content: center; /* Centraliza na horizontal */
     position: relative; /* Garante que os filhos absolutos fiquem dentro dela */
 
+    border: 5px solid var(--fundo-branco);
+
 }
 
 .barrinhaDivsMenu{
@@ -175,15 +194,13 @@ a {
 
     height: 100%;
     width: 100%;
-    bottom: 0;
-    background-color: var(--fundo-UI);
+    background-color: var(--fundo-branco);
     position:absolute ;
     z-index: 2;
     top: 85%;
     border-radius: 50px;
     box-sizing: border-box;
     transition:  0.3s;
-
 }
 
 .barrinhaDivsMenu:hover{
