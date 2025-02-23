@@ -58,10 +58,11 @@
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
                     const r = new rive.Rive({
-                        src: "imagens/mundo.riv", // Caminho do arquivo .riv
+                        src: "imagens/outromundo.riv", // Caminho do arquivo .riv
                         canvas: document.getElementById("riveCanvas"),
-                        autoplay: true,  // A animação começa automaticamente
-                        loop: true,
+        loop: true,
+        stateMachines: ["State Machine 1"], // Nome do State Machine
+        autoplay: true,
                     });
                 });
             </script>
@@ -70,6 +71,8 @@
 
             
         </div>
+
+        
         <div class="div2">
             <img class="imgDivHome" src="imagens/inventarioHome.png" height="100%" >   
             <div class="barrinhaDivsMenu"><h2>Inventário</div>      
