@@ -99,13 +99,19 @@ a {
     transform: translate(-50%, -50%);  
 }
 
+#riveCanvas {
+    width: 100%;
+    height: 100%;
+    display: block; /* Evita espaços extras */
+}
+
 .div1 { 
     grid-area: 2 / 1 / 4 / 3; /* Agora ocupa da linha 1 até a linha 3, e da coluna 1 até a coluna 3 */
     background-color: #b8f1f4;
     border-radius: 12px;
     overflow: hidden;
-
     display: flex;
+
     align-items: center; /* Centraliza na vertical */
     justify-content: center; /* Centraliza na horizontal */
     border: 5px solid white;
