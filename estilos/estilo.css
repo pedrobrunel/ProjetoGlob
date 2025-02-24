@@ -27,6 +27,29 @@
     margin-top: 1%;
     }
 
+    .menuBaixo{
+        box-sizing: border-box;
+        position: fixed;
+        background-color: var(--fundo-UI);
+        border-radius: 50px 50px 0px 0px;
+        bottom: 0;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: flex; /* Flexbox para alinhar os ícones lado a lado */
+        gap: 20px;
+        left: 50%;
+        transform: translateX(-50%); /* Ajusta para centralizar */
+        
+
+    }
+
+    .bolaBaixoMenu{
+     box-sizing: border-box;
+     align-items: center; /* Alinha os ícones verticalmente */
+    }
+
 .divMenuCima{
     cursor: url('/imagens/mouse/setaClique.cur'), pointer;
     transition:  0.3s;
