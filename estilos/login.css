@@ -68,7 +68,7 @@ a {
     cursor: url('/imagens/mouse/setaClique.cur'), pointer;
 }
 
-#username, #senha {
+#email, #senha {
     width: 200px;
     padding: 8px;
     border: 1px solid #ccc;

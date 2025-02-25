@@ -1,3 +1,8 @@
+<?php
+
+include('protect.php');
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -41,14 +46,9 @@
     </script>
 
 <script src="https://unpkg.com/@rive-app/canvas@2.10.1"></script>
-
-    
-    
-
-
     
 </head>
-<body onload="incluirMenu('menus/menuCima.html', '#menuCima'); incluirMenu('menus/menuBaixo.html', '#menuBaixo');">
+<body onload="incluirMenu('menus/menuCima.php', '#menuCima'); incluirMenu('menus/menuBaixo.html', '#menuBaixo');">
 
     <div id="menuCima"></div>
     
